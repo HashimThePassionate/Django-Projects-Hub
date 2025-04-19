@@ -1,0 +1,189 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 40px 0 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Layout */
+#content {
+    float: left;
+    width: 65%;
+    padding: 0 0 0 40px;
+    margin: 20px 0;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    min-height: 100vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Date Styling */
+p.date {
+    color: #6c757d;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+/* Utility Classes */
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Pagination */
+.pagination {
+    margin: 50px 0;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #007bff;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Forms */
+label {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+input[type=submit] {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background: #0056b3;
+}
+
+.errorlist {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Comments */
+.comment {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.comment .info {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #content, #sidebar {
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #sidebar {
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
