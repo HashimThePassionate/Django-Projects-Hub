@@ -1,4 +1,4 @@
-/* Global Reset and Base Styles */
+/* Previous CSS content (unchanged) */
 * {
     margin: 0;
     padding: 0;
@@ -202,6 +202,14 @@ label {
     margin-bottom: 8px;
 }
 
+/* New Success Heading Class */
+.success-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #28a745; /* Green for success */
+    margin: 40px 0 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     #content, #sidebar {
@@ -219,7 +227,7 @@ label {
         font-size: 2rem;
     }
 
-    h2 {
+    h2, .success-heading {
         font-size: 1.5rem;
     }
 

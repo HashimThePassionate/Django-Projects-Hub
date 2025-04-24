@@ -60,6 +60,9 @@
             </div>
             <button type="submit" class="form-button">Send E-mail</button>
         </form>
-    {% endif %}
-</div>
+        {% endif %} <br>
+        <p class="info">
+            <a href="{% url 'blog:post_list' %}">Go to Home</a>
+        </p>
+    </div>
 {% endblock %}

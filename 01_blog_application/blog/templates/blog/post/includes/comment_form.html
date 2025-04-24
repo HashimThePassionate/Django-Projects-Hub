@@ -1,0 +1,68 @@
+<div class="form-container">
+    <h2>Add a new comment</h2>
+    <form action="{% url 'blog:post_comment' post.id %}" method="post">
+        {% csrf_token %}
+
+        <!-- Non-field errors -->
+        {% if form.non_field_errors %}
+            <div class="nonfield-error">
+                {{ form.non_field_errors }}
+            </div>
+        {% endif %}
+
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="{{ form.name.id_for_label }}">Name</label>
+            <input type="text" 
+                   name="{{ form.name.name }}" 
+                   id="{{ form.name.id_for_label }}" 
+                   class="form-input" 
+                   value="{{ form.name.value|default_if_none:'' }}" 
+                   required>
+            {% if form.name.errors %}
+                <ul class="errorlist">
+                    {% for error in form.name.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="{{ form.email.id_for_label }}">Email</label>
+            <input type="email" 
+                   name="{{ form.email.name }}" 
+                   id="{{ form.email.id_for_label }}" 
+                   class="form-input" 
+                   value="{{ form.email.value|default_if_none:'' }}" 
+                   required>
+            {% if form.email.errors %}
+                <ul class="errorlist">
+                    {% for error in form.email.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <!-- Body Field -->
+        <div class="form-group">
+            <label for="{{ form.body.id_for_label }}">Comment</label>
+            <textarea name="{{ form.body.name }}" 
+                      id="{{ form.body.id_for_label }}" 
+                      class="form-textarea" 
+                      required>{{ form.body.value|default_if_none:'' }}</textarea>
+            {% if form.body.errors %}
+                <ul class="errorlist">
+                    {% for error in form.body.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="form-button">Add comment</button>
+    </form>
+</div>
