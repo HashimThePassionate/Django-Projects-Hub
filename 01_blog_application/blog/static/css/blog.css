@@ -97,7 +97,8 @@ p.date {
 /* Forms */
 .form-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0; /* Remove auto centering */
+    margin-left: 0; /* Ensure it aligns to the left */
     padding: 20px;
     background: #ffffff;
     border-radius: 8px;
@@ -243,4 +244,20 @@ label {
         width: 100%;
         padding: 12px;
     }
+}
+
+.tags {
+    font-size: 0.9rem;
+    color: #495057; /* Matches comment info color for consistency */
+    background: #f8f9fa; /* Light background like even comments */
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 12px;
+    border: 1px solid #e0e0e0; /* Matches sidebar border */
+    transition: background-color 0.3s ease;
+}
+
+.tags:hover {
+    background: #e9ecef; /* Slightly darker on hover for interaction */
 }
