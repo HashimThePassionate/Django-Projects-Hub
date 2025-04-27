@@ -211,40 +211,6 @@ label {
     margin: 40px 0 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #content, #sidebar {
-        float: none;
-        width: 100%;
-        padding: 20px;
-    }
-
-    #sidebar {
-        border-left: none;
-        border-top: 1px solid #e0e0e0;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2, .success-heading {
-        font-size: 1.5rem;
-    }
-
-    .form-container {
-        padding: 15px;
-    }
-
-    .form-input, .form-textarea {
-        padding: 10px 12px;
-    }
-
-    .form-button {
-        width: 100%;
-        padding: 12px;
-    }
-}
 
 .tags {
     font-size: 0.9rem;
@@ -261,3 +227,84 @@ label {
 .tags:hover {
     background: #e9ecef; /* Slightly darker on hover for interaction */
 }
+
+/* Latest Posts List */
+.latest-posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.latest-post-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 6px;
+    border-left: 3px solid #007bff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.latest-post-item:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.latest-post-item a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.latest-post-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Alert Class */
+.alert {
+    font-size: 1rem;
+    color: #495057;
+    background: #e7f3ff; /* Light blue background for a subtle alert */
+    padding: 12px 16px;
+    border-left: 4px solid #007bff; /* Blue border to match theme */
+    border-radius: 4px;
+    margin: 16px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #content, #sidebar {
+            float: none;
+            width: 100%;
+            padding: 20px;
+        }
+    
+        #sidebar {
+            border-left: none;
+            border-top: 1px solid #e0e0e0;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        h2, .success-heading {
+            font-size: 1.5rem;
+        }
+    
+        .form-container {
+            padding: 15px;
+        }
+    
+        .form-input, .form-textarea {
+            padding: 10px 12px;
+        }
+    
+        .form-button {
+            width: 100%;
+            padding: 12px;
+        }
+    }
