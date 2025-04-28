@@ -1,0 +1,896 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-04-21T02:31:41.339Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Python Depp Dive",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-04-21T02:32:36.986Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Python Depp Dive",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-04-21T02:33:37.858Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Python Deep Dive",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-04-21T02:36:28.961Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Introduction to Web Development",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-04-21T02:36:54.446Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Getting Started with Django",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-04-21T02:37:14.481Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Python Basics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-04-21T02:37:36.960Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "CSS Tips and Tricks",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-04-21T02:37:57.410Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "JavaScript for Beginners",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-04-21T02:38:17.796Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Understanding HTTP Requests",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-04-21T02:38:35.843Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Building a Blog with Django",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-04-24T03:38:53.724Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Comment by Muhammad Hashim on Python Deep Dive",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-04-27T22:37:12.555Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Introduction to Web Development",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-04-27T22:37:43.936Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Getting Started with Django",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-04-27T22:38:06.704Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Python Basics",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-04-27T22:38:24.019Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "CSS Tips and Tricks",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-04-27T22:38:50.678Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "JavaScript for Beginners",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-04-27T22:39:07.463Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Understanding HTTP Requests",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-04-27T22:39:29.982Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Building a Blog with Django",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-04-27T23:24:32.453Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Typescript For Everyone",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-04-27T23:24:42.362Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Typescript For Everyone",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-04-27T23:53:03.878Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-04-27T23:53:44.439Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2025-04-27T23:54:35.402Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2025-04-27T23:55:19.853Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2025-04-27T23:56:27.463Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2025-04-27T23:57:24.038Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Markdown Post",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2025-04-28T00:13:53.309Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "localhost:8000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$ap1hzxJcrU2m5pTH90eiFL$TjDfKqj4dGSlWKC3icGy0ifoxCFDObz9IiXchbup7w8=",
+      "last_login": "2025-04-27T22:18:12.876Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-04-21T02:30:27.578Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "65nqc0wrh59vtgg044c7d3pb2b4clf2k",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQAP_C2RAohV08eu8bCLBbqRqalPZk_Lsh6UGvM5N5ixCPvYSj8RYWElehxeWXpZifXLugR6z3Vea17tuSZE_kaZucVuLX7Wz_BiW20rczRbbgwaK3bLKCpNnDaIxBPTgzKGSlcMygARITZvZRzS55jeQ8i88Xw0k3MQ:1u7nPl:WyjFbrbP4OQoMbUJ1Uru_ifvOn1m9Dz8vSXIDR6bF08",
+      "expire_date": "2025-05-08T03:38:17.109Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "vaxw29il3d1cbcp7js4k8o4ro7cfqbdg",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQAP_C2RAohV08eu8bCLBbqRqalPZk_Lsh6UGvM5N5ixCPvYSj8RYWElehxeWXpZifXLugR6z3Vea17tuSZE_kaZucVuLX7Wz_BiW20rczRbbgwaK3bLKCpNnDaIxBPTgzKGSlcMygARITZvZRzS55jeQ8i88Xw0k3MQ:1u9AKD:6raxKN7AMKFgu7us9E0BexbjpPsdTpmaP4fOekSr3lQ",
+      "expire_date": "2025-05-11T22:18:13.033Z"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "localhost:8000",
+      "name": "localhost:8000"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Python Deep Dive",
+      "slug": "python-deep-dive"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Django Rest Framework",
+      "slug": "django-rest-framework"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Django",
+      "slug": "django"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+      "name": "js",
+      "slug": "js"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 5,
+    "fields": {
+      "name": "htmk",
+      "slug": "htmk"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 6,
+    "fields": {
+      "name": "css",
+      "slug": "css"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 7,
+    "fields": {
+      "name": "programming language",
+      "slug": "programming-language"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 8,
+    "fields": {
+      "name": "python",
+      "slug": "python"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 9,
+    "fields": {
+      "name": "frntend",
+      "slug": "frntend"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 10,
+    "fields": {
+      "name": "javascript",
+      "slug": "javascript"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 11,
+    "fields": {
+      "name": "Typescript",
+      "slug": "typescript"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 12,
+    "fields": {
+      "name": "http methods",
+      "slug": "http-methods"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 13,
+    "fields": {
+      "name": "post",
+      "slug": "post"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 14,
+    "fields": {
+      "name": "get",
+      "slug": "get"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 15,
+    "fields": {
+      "name": "blog website",
+      "slug": "blog-website"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 16,
+    "fields": {
+      "name": "markdown",
+      "slug": "markdown"
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 1,
+    "fields": {
+      "tag": 1,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 2,
+    "fields": {
+      "tag": 2,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 3,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 4,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 5,
+    "fields": {
+      "tag": 4,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 6,
+    "fields": {
+      "tag": 5,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 7,
+    "fields": {
+      "tag": 6,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 8,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 3
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 9,
+    "fields": {
+      "tag": 8,
+      "content_type": 7,
+      "object_id": 4
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 10,
+    "fields": {
+      "tag": 7,
+      "content_type": 7,
+      "object_id": 4
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 11,
+    "fields": {
+      "tag": 9,
+      "content_type": 7,
+      "object_id": 5
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 12,
+    "fields": {
+      "tag": 6,
+      "content_type": 7,
+      "object_id": 5
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 13,
+    "fields": {
+      "tag": 10,
+      "content_type": 7,
+      "object_id": 6
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 14,
+    "fields": {
+      "tag": 11,
+      "content_type": 7,
+      "object_id": 6
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 15,
+    "fields": {
+      "tag": 12,
+      "content_type": 7,
+      "object_id": 7
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 16,
+    "fields": {
+      "tag": 13,
+      "content_type": 7,
+      "object_id": 7
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 17,
+    "fields": {
+      "tag": 14,
+      "content_type": 7,
+      "object_id": 7
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 18,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 8
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 19,
+    "fields": {
+      "tag": 15,
+      "content_type": 7,
+      "object_id": 8
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 20,
+    "fields": {
+      "tag": 10,
+      "content_type": 7,
+      "object_id": 9
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 21,
+    "fields": {
+      "tag": 11,
+      "content_type": 7,
+      "object_id": 9
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 22,
+    "fields": {
+      "tag": 16,
+      "content_type": 7,
+      "object_id": 10
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 23,
+    "fields": {
+      "tag": 13,
+      "content_type": 7,
+      "object_id": 10
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Python Deep Dive",
+      "slug": "python-deep-dive",
+      "author": 1,
+      "body": "Dive deep into Python, covering its fundamentals, OOP, data structures, algorithms, and design patterns. You'll learn advanced Python techniques, CPython compilation, and become proficient in sophisticated data structures and algorithms. By mastering these concepts, you will be well-prepared to handle complex programming challenges.",
+      "publish": "2025-04-21T02:30:50Z",
+      "created": "2025-04-21T02:31:41.339Z",
+      "updated": "2025-04-21T02:33:37.858Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "Introduction to Web Development",
+      "slug": "introduction-to-web-development",
+      "author": 1,
+      "body": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
+      "publish": "2025-04-21T02:34:21Z",
+      "created": "2025-04-21T02:36:28.953Z",
+      "updated": "2025-04-27T22:37:12.526Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Getting Started with Django",
+      "slug": "getting-started-with-django",
+      "author": 1,
+      "body": "A beginner's guide to setting up a Django project and creating your first app.",
+      "publish": "2025-04-21T02:36:30Z",
+      "created": "2025-04-21T02:36:54.446Z",
+      "updated": "2025-04-27T22:37:43.923Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "title": "Python Basics",
+      "slug": "python-basics",
+      "author": 1,
+      "body": "Understand the fundamentals of Python programming with examples.",
+      "publish": "2025-04-21T02:36:59Z",
+      "created": "2025-04-21T02:37:14.473Z",
+      "updated": "2025-04-27T22:38:06.682Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "title": "CSS Tips and Tricks",
+      "slug": "css-tips-and-tricks",
+      "author": 1,
+      "body": "Improve your CSS skills with these simple tips and tricks.",
+      "publish": "2025-04-21T02:37:16Z",
+      "created": "2025-04-21T02:37:36.960Z",
+      "updated": "2025-04-27T22:38:24.003Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "title": "JavaScript for Beginners",
+      "slug": "javascript-for-beginners",
+      "author": 1,
+      "body": "An introduction to JavaScript for those new to programming.",
+      "publish": "2025-04-21T02:37:38Z",
+      "created": "2025-04-21T02:37:57.410Z",
+      "updated": "2025-04-27T22:38:50.652Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+      "title": "Understanding HTTP Requests",
+      "slug": "understanding-http-requests",
+      "author": 1,
+      "body": "Learn how HTTP requests work and how to handle them in Django.",
+      "publish": "2025-04-21T02:37:59Z",
+      "created": "2025-04-21T02:38:17.796Z",
+      "updated": "2025-04-27T22:39:07.436Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+      "title": "Building a Blog with Django",
+      "slug": "building-a-blog-with-django",
+      "author": 1,
+      "body": "Step-by-step guide to creating a blog using Django framework.",
+      "publish": "2025-04-21T02:38:23Z",
+      "created": "2025-04-21T02:38:35.843Z",
+      "updated": "2025-04-27T22:39:29.956Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+      "title": "Typescript For Everyone",
+      "slug": "typescript-for-everyone",
+      "author": 1,
+      "body": "A comprehensive guide to mastering TypeScript with hands-on examples and real-world projects",
+      "publish": "2025-04-27T23:23:35Z",
+      "created": "2025-04-27T23:24:32.437Z",
+      "updated": "2025-04-27T23:24:42.357Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "title": "Markdown Post",
+      "slug": "markdown-post",
+      "author": 1,
+      "body": "### What I Learned\r\n\r\n- **Django Basics**: Setting up a project with `django-admin startproject myblog`.\r\n- **Templates**: Using HTML with Django's template tags like `{% for post in posts %}`.\r\n> \"The journey of a thousand miles begins with a single step.\" — Lao Tzu\r\n### Next Steps\r\n1. Add a comment section.\r\n2. Explore [Bootstrap](https://getbootstrap.com/) for better styling.",
+      "publish": "2025-04-27T23:51:51Z",
+      "created": "2025-04-27T23:53:03.853Z",
+      "updated": "2025-04-27T23:57:24.030Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "name": "Muhammad Hashim",
+      "email": "hashiimtahir@gmail.com",
+      "body": "This repository is absolutely awesome",
+      "created": "2025-04-24T03:38:53.722Z",
+      "updated": "2025-04-24T03:38:53.722Z",
+      "active": true
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "name": "Muhammad Talha",
+      "email": "talha@gmail.com",
+      "body": "This respository is absolutely awesome",
+      "created": "2025-04-24T03:57:46.988Z",
+      "updated": "2025-04-24T03:57:46.988Z",
+      "active": true
+    }
+  }
+]
