@@ -44,3 +44,7 @@ class CommentForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'class': 'form-input'}),
             'body': forms.Textarea(attrs={'class': 'form-textarea'}),
         }
+
+
+class SearchForm(forms.Form):
+    query = forms.CharField()

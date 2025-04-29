@@ -97,16 +97,18 @@ p.date {
 /* Forms */
 .form-container {
     max-width: 600px;
-    margin: 0; /* Remove auto centering */
-    margin-left: 0; /* Ensure it aligns to the left */
+    margin: 0;
+    margin-left: 0;
     padding: 20px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure form container takes full available width */
 }
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%; /* Ensure form group takes full width */
 }
 
 label {
@@ -119,7 +121,8 @@ label {
 
 .form-input, .form-textarea {
     display: block;
-    width: 100%;
+    width: 100%; /* Full width for input */
+    max-width: 500px; /* Maximum width to prevent it from being too wide */
     padding: 12px 16px;
     font-size: 1rem;
     border: 1px solid #ced4da;
@@ -132,11 +135,6 @@ label {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 120px;
 }
 
 .form-button {
@@ -156,6 +154,7 @@ label {
 .form-button:hover {
     background: #0056b3;
     transform: translateY(-2px);
+    color: #fff;
 }
 
 .form-button:active {
@@ -258,7 +257,7 @@ label {
 }
 
 .latest-post-item a:hover {
-    color: #0056b3;
+    color: #e4e7eb;
     text-decoration: underline;
 }
 
@@ -273,7 +272,53 @@ label {
     margin: 16px 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+/* Post Item */
+.post-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
 
+.post-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.post-item h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.post-item h4 a {
+    color: #1a1a1a;
+}
+
+.post-item h4 a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Post Excerpt */
+.post-excerpt {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 12px;
+}
+
+/* Ensure tags are inline and spaced */
+.tags a {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+.tags a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
     /* Responsive Design */
     @media (max-width: 768px) {
         #content, #sidebar {

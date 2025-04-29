@@ -1,0 +1,29 @@
+{% load blog_tags %}
+{% if query %}
+    <h1>Posts containing "{{ query }}"</h1>
+    <h3>
+        {% with results.count as total_results %}
+            Found {{ total_results }} result{{ total_results|pluralize }}
+        {% endwith %}
+         <p>
+            <a href="{% url 'blog:post_list' %}">Go to Home</a>
+        </p>
+    </h3>
+    {% for post in results %}
+        <div class="post-item">
+            <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+            <p class="date">Published on {{ post.publish|date:"F d, Y" }}</p>
+            <div class="post-excerpt">{{ post.body|markdown|truncatewords_html:12 }}</div>
+            <p class="tags">
+                Tags: 
+                {% for tag in post.tags.all %}
+                    <a href="{% url 'blog:post_list_by_tag' tag.slug %}" class="tags">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+    {% empty %}
+        <p class="alert">There are no results for your query.</p>
+    {% endfor %}
+{% else %}
+    <p class="alert">Please enter a search query.</p>
+{% endif %}
