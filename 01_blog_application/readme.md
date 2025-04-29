@@ -7,8 +7,7 @@ Welcome to the **Blog Website Project**! 🚀 This project is a fully-featured b
 ## ✨ Project Demo
 
 Below is a quick demo of how the blog website looks and works:
-
-![Project Demo](assets/demo.gif)
+<img src="./assests/demo.gif"/>
 
 ## ✨ Features
 
@@ -218,11 +217,3 @@ These are automatically installed when you build the Docker image.
   ```bash
   docker-compose logs
   ```
-
----
-
-## 📧 Contact
-
-If you have any questions or need assistance, feel free to reach out via email at the address configured in `DEFAULT_FROM_EMAIL`.
-
-Happy blogging! 🎉
