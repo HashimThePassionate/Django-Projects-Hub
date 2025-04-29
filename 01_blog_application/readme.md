@@ -13,27 +13,21 @@ Below is a quick demo of how the blog website looks and works:
 
 ## ✨ Features
 
-### 🛠️ Building a Blog Application
-
-- Learn the basics of Django by developing:
-  - **Models** for blog posts and related data.
-  - **Views** to handle requests and render templates.
-  - **Templates** for a user-friendly UI.
-  - **URLs** to map routes to views.
-- Gain hands-on experience with the **Django ORM** to create QuerySets.
-- Configure the **admin interface** for easy content management.
-
-
-- Add advanced functionality to your blog:
-  - **Pagination** for better navigation through posts.
-  - **Email integration** for notifications (e.g., contact forms).
-  - **Form handling** for user inputs (e.g., comments).
-- Improve user engagement with a **comment system** to allow feedback on posts.
-  - Integrate **django-taggit** for tagging posts.
-  - Build complex QuerySets to suggest **related posts**.
-  - Create **custom template tags and filters** for enhanced template functionality.
-- Add a **sitemap** for better SEO.
-- Enable robust **full-text search** using PostgreSQL.
+- Blog post models
+- Views for handling requests
+- Templates for user interface
+- URL routing
+- Django ORM with QuerySets
+- Admin interface configuration
+- Pagination for posts
+- Email integration (contact forms)
+- Form handling (comments)
+- Comment system
+- Post tagging with `django-taggit`
+- Related posts suggestion
+- Custom template tags and filters
+- Sitemap generation for SEO
+- Full-text search with PostgreSQL
 
 ---
 
