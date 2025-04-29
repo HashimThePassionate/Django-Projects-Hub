@@ -7,7 +7,9 @@ Welcome to the **Blog Website Project**! 🚀 This project is a fully-featured b
 ## ✨ Project Demo
 
 Below is a quick demo of how the blog website looks and works:
+<div align="center">
 <img src="./assests/demo.gif"/>
+</div>
 
 ## ✨ Features
 
