@@ -1,350 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f0f2f5;
-    color: #1c1e21;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1a202c;
+    background-color: #f7fafc;
 }
 
 a {
+    color: #3182ce;
     text-decoration: none;
-    color: #1877f2;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #166fe5;
+    color: #2b6cb0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+h1 {
+    font-size: 2.25rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+    margin: 1.5rem 0 2rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+    margin: 2rem 0 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ol {
+    line-height: 1.8;
+    margin: 1rem 0;
 }
 
 /* Header */
-.header {
-    background: #1877f2;
-    padding: 0.5rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+#header {
+    background: linear-gradient(90deg, #2b6cb0 0%, #3182ce 100%);
+    color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.header .logo {
-    color: white;
-    font-size: 1.8rem;
+#header .logo {
+    font-size: 1.5rem;
     font-weight: 700;
+    color: #ebf8ff;
 }
 
-.nav-menu {
+#header ul.menu {
+    list-style: none;
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
 }
 
-.nav-menu a {
-    color: white;
+#header ul.menu li {
+    margin: 0 1rem;
+}
+
+#header ul.menu li a {
+    color: #ebf8ff;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 0.25rem;
 }
 
-.nav-menu a:hover {
-    background: rgba(255,255,255,0.1);
+#header ul.menu li.selected a,
+#header ul.menu li a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.user-actions {
+#header .user {
     display: flex;
-    gap: 1rem;
     align-items: center;
 }
 
-.user-actions button {
+#header .user button {
     background: none;
     border: none;
-    color: white;
+    color: #ebf8ff;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
 }
 
-.user-actions button:hover {
-    background: rgba(255,255,255,0.1);
-}
-
-/* Main Content */
-.main-content {
+/* Content */
+#content {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: block;
-}
-
-/* Sidebar */
-.sidebar {
-    position: sticky;
-    top: 70px;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-}
-
-.sidebar-section {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.sidebar-section h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.sidebar-section a {
-    display: block;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-/* Content Area */
-.content-area {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.post-composer {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.post-composer textarea {
-    width: 100%;
-    border: none;
-    resize: none;
-    font-size: 0.9rem;
-    padding: 0.5rem;
-    border-radius: 6px;
-    background: #f0f2f5;
-}
-
-.post {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.post-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
-
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.post-meta {
-    flex: 1;
-}
-
-.post-meta .username {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.post-meta .timestamp {
-    color: #65676b;
-    font-size: 0.8rem;
-}
-
-.post-content {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.post-actions {
-    display: flex;
-    gap: 1rem;
-    border-top: 1px solid #e4e6eb;
-    padding-top: 0.5rem;
-}
-
-.post-actions button {
-    flex: 1;
-    background: none;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    color: #65676b;
-    font-size: 0.9rem;
-}
-
-/* Right Sidebar */
-.right-sidebar {
-    position: sticky;
-    top: 70px;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-}
-
-.suggested-users, .trending {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
 }
 
 /* Forms */
-.form-container {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    max-width: 450px;
-    margin: 2rem auto;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+form {
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+label {
     display: block;
-}
-
-.login-section {
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-    display: flex; /* Flexbox ke sath label aur input ek line mein */
-    align-items: center; /* Vertically center align */
-    gap: 1rem; /* Label aur input ke beech space */
-}
-
-.form-group label {
-    flex: 0 0 100px; /* Label ke liye fixed width, adjust kar sakte ho */
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 0; /* Margin hata diya kyunki flex mein nahi chahiye */
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%; /* Flex ke andar pura space le le */
-    padding: 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    flex: 1; /* Input ke liye remaining space */
-}
-
-.form-group input[type="submit"] {
-    background: #1877f2;
-    color: white;
-    border: none;
-    padding: 0.7rem 2rem;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: background 0.2s ease;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.form-group input[type="submit"]:hover {
-    background: #166fe5;
-}
-
-/* Messages */
-.messages {
-    max-width: 500px;
-    margin: 1rem auto;
-}
-
-.message {
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
+    font-weight: 500;
+    color: #4a5568;
     margin-bottom: 0.5rem;
 }
 
-.message.success { background: #4bb543; color: white; }
-.message.error { background: #e02424; color: white; }
-.message.info { background: #1877f2; color: white; }
-.message.warning { background: #f7b928; color: #1c1e21; }
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .main-content {
-        max-width: 100%;
-    }
-    
-    .sidebar {
-        display: none;
-    }
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+input[type=submit], a.button {
+    background: #3182ce;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover, a.button:hover {
+    background: #2b6cb0;
+}
+
+.errorlist {
+    color: #e53e3e;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.helptext {
+    color: #718096;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Messages */
+ul.messages {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul.messages li {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    color: #fff;
+}
+
+ul.messages li.success { background: #48bb78; }
+ul.messages li.error { background: #e53e3e; }
+ul.messages li.info { background: #3182ce; }
+ul.messages li.warning { background: #ed8936; }
+
+/* Images */
+.image-preview, .image-detail {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#image-list .image {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#image-list .image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#image-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#image-list .info {
+    padding: 1rem;
+}
+
+/* Users */
+#people-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+#people-list .user {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.375rem;
+}
+
+#people-list img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .main-content {
-        max-width: 100%;
-    }
-    
-    .right-sidebar {
-        display: none;
-    }
-    
-    .header {
-        padding: 0.5rem 1rem;
-    }
-    
-    .nav-menu {
-        gap: 0.5rem;
-    }
-    
-    .nav-menu a {
-        padding: 0.5rem;
-    }
-    
-    .form-container {
-        max-width: 100%;
+    #header {
         padding: 1rem;
-    }
-    
-    .form-group {
-        flex-direction: column; /* Mobile mein ek ke neeche */
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
     }
-    
-    .form-group label {
-        flex: none;
-        width: auto;
+
+    #header .logo {
+        margin-bottom: 1rem;
+    }
+
+    #header ul.menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header ul.menu li {
+        margin: 0.5rem 0;
+    }
+
+    #header .user {
+        margin-top: 1rem;
+    }
+
+    #content {
+        padding: 1.5rem 1rem;
+    }
+
+    #image-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .header .logo {
-        font-size: 1.4rem;
+    h1 {
+        font-size: 1.75rem;
     }
-    
-    .user-actions button {
-        padding: 0.5rem;
-        font-size: 0.8rem;
+
+    h2 {
+        font-size: 1.5rem;
     }
-    
-    .post-composer,
-    .post {
-        padding: 0.75rem;
+
+    #image-list {
+        grid-template-columns: 1fr;
+    }
+
+    #people-list {
+        grid-template-columns: 1fr;
     }
 }
