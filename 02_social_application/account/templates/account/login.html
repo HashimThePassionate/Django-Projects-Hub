@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Log-in{% endblock %}
+{% block content %}
+<div class="form-container">
+ <div class="login-section">
+  <h1>Log-in</h1>
+  <p>Please, use the following form to log-in:</p>
+  <form method="post" novalidate>
+   {% csrf_token %}
+   {% if form.non_field_errors %}
+    <div class="message error">
+     {% for error in form.non_field_errors %}
+      <p>{{ error }}</p>
+     {% endfor %}
+    </div>
+   {% endif %}
+   {% for field in form %}
+    <div class="form-group">
+     {{ field.label_tag }}
+     {{ field }}
+     {% if field.errors %}
+      <div class="message error">
+       {% for error in field.errors %}
+        <p>{{ error }}</p>
+       {% endfor %}
+      </div>
+     {% endif %}
+    </div>
+   {% endfor %}
+   <div class="form-group">
+    <input type="submit" value="Log in">
+   </div>
+  </form>
+ </div>
+</div>
+{% endblock %}

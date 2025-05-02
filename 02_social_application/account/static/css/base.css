@@ -82,9 +82,7 @@ a:hover {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 250px 1fr 300px;
-    gap: 2rem;
+    display: block;
 }
 
 /* Sidebar */
@@ -214,42 +212,58 @@ a:hover {
 /* Forms */
 .form-container {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    max-width: 500px;
+    max-width: 450px;
     margin: 2rem auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.login-section {
+    width: 100%;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex; /* Flexbox ke sath label aur input ek line mein */
+    align-items: center; /* Vertically center align */
+    gap: 1rem; /* Label aur input ke beech space */
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    flex: 0 0 100px; /* Label ke liye fixed width, adjust kar sakte ho */
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0; /* Margin hata diya kyunki flex mein nahi chahiye */
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 0.9rem;
+    width: 100%; /* Flex ke andar pura space le le */
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex: 1; /* Input ke liye remaining space */
 }
 
-.form-group input[type=submit] {
+.form-group input[type="submit"] {
     background: #1877f2;
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.7rem 2rem;
     cursor: pointer;
     font-weight: 600;
+    border-radius: 4px;
     transition: background 0.2s ease;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.form-group input[type=submit]:hover {
+.form-group input[type="submit"]:hover {
     background: #166fe5;
 }
 
@@ -273,7 +287,7 @@ a:hover {
 /* Media Queries */
 @media (max-width: 1024px) {
     .main-content {
-        grid-template-columns: 1fr 300px;
+        max-width: 100%;
     }
     
     .sidebar {
@@ -283,7 +297,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .main-content {
-        grid-template-columns: 1fr;
+        max-width: 100%;
     }
     
     .right-sidebar {
@@ -300,6 +314,22 @@ a:hover {
     
     .nav-menu a {
         padding: 0.5rem;
+    }
+    
+    .form-container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .form-group {
+        flex-direction: column; /* Mobile mein ek ke neeche */
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .form-group label {
+        flex: none;
+        width: auto;
     }
 }
 
