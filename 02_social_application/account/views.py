@@ -9,7 +9,7 @@ from .forms import (
     UserEditForm,
     ProfileEditForm
 )
-
+from django.contrib import messages
 
 @login_required
 def edit(request):
@@ -26,6 +26,9 @@ def edit(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
+            messages.success(request, 'Profile updated successfully')
+        else:
+            messages.error(request, 'Error updating your profile')
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
@@ -56,26 +59,27 @@ def register(request):
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
             Profile.objects.create(user=new_user)
+            messages.success(request, 'Registration successful')
             return render(request, 'account/register_done.html', {'new_user': new_user})
     else:
         new_user = UserRegistrationForm()
     return render(request, 'account/register.html', {'user_form': new_user})
 
 
-def user_login(request):
-    if request.method == 'POST':
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            fm = form.cleaned_data
-            user = authenticate(
-                request, username=fm['username'], password=fm['password'])
-            if user is not None:
-                login(request, user)
-                return HttpResponse('Authenticated successful')
-            else:
-                return HttpResponse('Disabled account')
-        else:
-            return HttpResponse('Invalid login')
-    else:
-        form = LoginForm()
-    return render(request, 'account/login.html', {'form': form})
+# def user_login(request):
+#     if request.method == 'POST':
+#         form = LoginForm(request.POST)
+#         if form.is_valid():
+#             fm = form.cleaned_data
+#             user = authenticate(
+#                 request, username=fm['username'], password=fm['password'])
+#             if user is not None:
+#                 login(request, user)
+#                 return HttpResponse('Authenticated successful')
+#             else:
+#                 return HttpResponse('Disabled account')
+#         else:
+#             return HttpResponse('Invalid login')
+#     else:
+#         form = LoginForm()
+#     return render(request, 'account/login.html', {'form': form})

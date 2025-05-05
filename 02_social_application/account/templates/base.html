@@ -33,9 +33,30 @@
       {% endif %}
     </span>
   </div>
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li class="{{ message.tags }}">
+    {{ message|safe }}
+    <a href="#" class="close">x</a>
+    </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
   <div id="content">
     {% block content %}
     {% endblock %}
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                button.parentElement.remove(); // Remove the parent li element
+            });
+        });
+    });
+    </script>
 </body>
 </html>
