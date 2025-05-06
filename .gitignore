@@ -176,3 +176,7 @@ cython_debug/
 migrations/
 readme.txt
 media/
+
+
+cert.crt
+cert.key

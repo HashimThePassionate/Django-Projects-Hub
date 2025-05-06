@@ -25,13 +25,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=nfey-p$=yh4=j0-v&#s+_7!o0q#b=!eqdk$t8t0_i_76um0d3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'django.contrib.admin',
@@ -40,7 +33,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+    'social_django',
 ]
+
+DEBUG = True
+
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+
+
+# Application definition
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,8 +57,12 @@ MIDDLEWARE = [
 
 AUTHENTICATION_BACKENDS = [
     'account.authentication.EmailAuthBackend',
+    'social_core.backends.google.GoogleOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_OAUTH2_KEY')
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_OAUTH2_SECRET')
 
 ROOT_URLCONF = 'bookmarks.urls'
 
@@ -85,7 +92,6 @@ LOGOUT_URL = 'logout'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-
 
 DATABASES = {
     'default': {
