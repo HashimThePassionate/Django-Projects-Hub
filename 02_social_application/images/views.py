@@ -5,6 +5,39 @@ from .forms import ImageCreateForm
 from .models import Image
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.http import HttpResponse
+
+
+@login_required
+def image_list(request):
+    images = Image.objects.all()
+    paginator = Paginator(images, 8)
+    page = request.GET.get('page')
+    images_only = request.GET.get('images_only')
+    try:
+        images = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        images = paginator.page(1)
+    except EmptyPage:
+        if images_only:
+            # If AJAX request and page out of range
+            # return an empty page
+            return HttpResponse('')
+        # If page out of range return last page of results
+        images = paginator.page(paginator.num_pages)
+    if images_only:
+        return render(
+            request,
+            'images/image/list_images.html',
+            {'section': 'images', 'images': images},
+        )
+    return render(
+        request,
+        'images/image/list.html',
+        {'section': 'images', 'images': images},
+    )
 
 
 @login_required
